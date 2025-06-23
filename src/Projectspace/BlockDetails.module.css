@@ -1,0 +1,139 @@
+.detailsContainer {
+  margin: 1rem auto;
+  padding: 2rem;
+  max-width: 600px;
+  min-height: 300px;
+  display: flex;
+  background-color: #f8fafc;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.5s ease-in;
+}
+
+.detailsWrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.textDetails {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.imageContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.candidateInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+h3 {
+  color: #00c4cc;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin-bottom: 1.2rem;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+p {
+  font-size: 1.1rem;
+  color: #1f2937;
+  font-weight: 500;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.candidateName {
+  font-size: 1rem;
+  color: #1f2937;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.error {
+  font-size: 1.1rem;
+  color: #ff4d4d;
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+  font-weight: 500;
+}
+
+.candidatePhoto {
+  display: block;
+  
+  width: 200px;
+  max-height:200px;
+  
+  border-radius: 5%;
+ 
+  
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.candidatePhoto:hover {
+  transform: scale(1.08);
+  
+}
+
+.referenceImage {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  border-radius: 12px;
+ 
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.referenceImage:hover {
+  transform: scale(1.05);
+
+}
+
+@media (max-width: 768px) {
+  .detailsContainer {
+    padding: 1.5rem;
+  }
+
+  .detailsWrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .candidatePhoto {
+    max-width: 100px;
+  }
+
+  .referenceImage {
+    max-width: 80%;
+  }
+
+  .candidateName {
+    font-size: 1rem;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
